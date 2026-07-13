@@ -1,0 +1,12 @@
+{
+  "_comment": "A PASS citing old.log from a previous run. Even a matching digest cannot make stale evidence current.",
+  "task": "verify-build",
+  "status": "PASS",
+  "evidence": [
+    {
+      "artifact": "old.log",
+      "result": "ok",
+      "digest": "6b3cc13e3e876581eb29ab400e6ae3d28678c81f46cc7e92526d65d4bda86eba"
+    }
+  ]
+}

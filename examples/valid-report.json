@@ -1,0 +1,12 @@
+{
+  "_comment": "A PASS backed by an artifact registered as ok in the current run. The digest matches the artifact content.",
+  "task": "verify-build",
+  "status": "PASS",
+  "evidence": [
+    {
+      "artifact": "unittest.log",
+      "result": "ok",
+      "digest": "ff3be7e39af86bc91d87ae25f95cb15fdd717f20e1347769f18b0f2096bb5cf4"
+    }
+  ]
+}

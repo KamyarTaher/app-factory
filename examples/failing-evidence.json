@@ -1,0 +1,12 @@
+{
+  "_comment": "A PASS citing a current artifact whose registered tool status is fail. The gate rejects the claim.",
+  "task": "verify-build",
+  "status": "PASS",
+  "evidence": [
+    {
+      "artifact": "failed.log",
+      "result": "fail",
+      "digest": "689370cca7dc320f68e2aed36f308d7b6800c51cd73483dc7471ee6472e6ce9d"
+    }
+  ]
+}

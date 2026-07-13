@@ -1,0 +1,20 @@
+[
+  {
+    "_readme": "Pull about 20 real cases from closed tickets. Each pass criterion must be script-checkable. Run this eval set in CI whenever a prompt or Skill changes."
+  },
+  {
+    "input": "A report claims PASS but has no evidence entries.",
+    "expected": "The gate rejects the report as fabricated success.",
+    "pass_criterion": "run_gate returns an issue containing 'PASS without evidence'."
+  },
+  {
+    "input": "A PASS cites an artifact registered as ok in the current run with a matching SHA-256 digest.",
+    "expected": "The gate accepts the report.",
+    "pass_criterion": "run_gate returns an empty issue list."
+  },
+  {
+    "input": "A PASS cites an artifact registered with status fail.",
+    "expected": "The gate rejects the report even when its digest matches.",
+    "pass_criterion": "run_gate returns an issue containing 'evidence cites a failing tool result'."
+  }
+]
