@@ -4,6 +4,8 @@ This is where I open up the machinery behind my app factory, brick by brick.
 
 The factory turns a one-sentence app idea into a shipped iOS app: discovery, pricing, design, build, App Store screenshots, submission. More than 20 apps have gone through it, a dozen live on the App Store ([Clashware developer page](https://apps.apple.com/us/developer/clashware-s%C3%A0rl/id1837470365)). The full story, and the reliability engineering that keeps a ~30-step nondeterministic pipeline honest, is in [the write-up on X](https://x.com/makray1/status/2076621937652998456).
 
+The heart of the factory is a checklist that couples product judgment to proof: rules that define what a good app is, and gates that make sure no agent can claim them without evidence. Judgment without proof is optional prose; proof without judgment is a correctly verified mediocre app.
+
 A copy of my exact system would not help you: it is too tangled and too specialised to how I work. The bricks are the reusable parts, extracted and made runnable. Roadmap: [ROADMAP.md](ROADMAP.md).
 
 ## Brick 1: the verification gate
